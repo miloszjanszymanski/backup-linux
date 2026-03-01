@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ $? -ne 0 ]; then
+    echo "Backup failed"
+    exit 1
+fi
 
 SOURCE_DIR="/home/user/dane"
 BACKUP_DIR="/backup"
